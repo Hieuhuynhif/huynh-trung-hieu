@@ -30,7 +30,12 @@ const customAPIRequest = async (currencyInput, currencyOutput, inputValue) => {
     inputValue
   );
 
-  console.log(result);
+  console.log("-- result :", result);
 };
+const a = "AUD";
+const b = "USD";
+const numA = 3;
+console.log("-- Run: customAPIRequest)", a, b, numA);
+console.log("Calculate: ", numA, a, "= ...", b);
 
-customAPIRequest("AUD", "USD", 1);
+customAPIRequest(a, b, numA);

@@ -1,20 +1,21 @@
-document.getElementById("myForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent default form submission
+document.getElementById("myForm").addEventListener("submit", function (event) {
+  event.preventDefault(); // Prevent default form submission
 
-    // Fetching input values
-    var name = document.getElementById("name").value;
-    var age = document.getElementById("age").value;
-    var color = document.getElementById("color").value;
+  // Fetching input values
+  const name = document.getElementById("name").value;
+  const age = document.getElementById("age").value;
+  const color = document.getElementById("color").value;
 
-    // Displaying input values
-    var result = document.getElementById("result");
-    result.innerHTML = `
+  // Displaying input values
+  const result = document.getElementById("result");
+  result.innerHTML = `
+        <br/>
         <h3>Submitted Values:</h3>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Age:</strong> ${age}</p>
-        <p><strong>Favorite Color:</strong> ${color}</p>
+        <p>Name: ${name}</p>
+        <p>Age: ${age}</p>
+        <p>Favorite Color: ${color}</p>
     `;
 
-    // Changing background color
-    document.body.style.backgroundColor = color;
+  // Changing background color
+  document.body.style.backgroundColor = color;
 });

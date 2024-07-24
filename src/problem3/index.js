@@ -12,4 +12,5 @@ const anagramGroups = (input = []) => {
 };
 
 const input = ["eat", "tea", "tan", "ate", "nat", "bat"];
-console.log(anagramGroups(input));
+console.log("-- run anagramGroups", input);
+console.log("-- result: ", anagramGroups(input));

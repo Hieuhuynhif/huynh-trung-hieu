@@ -6,6 +6,8 @@ const fizzBuzz = (x, y) => {
     else console.log(number);
   }
 };
-
-fizzBuzz(3,5)
-
+const a = 3;
+const b = 5;
+console.log("-- run: fizzBuzz", a, b);
+console.log("-- result:");
+fizzBuzz(a, b);

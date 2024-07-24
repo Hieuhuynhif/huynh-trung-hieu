@@ -15,5 +15,6 @@ const palindromeCheck = (str) => {
   }
   return true;
 };
-
-console.log(palindromeCheck("A man, a plan, a canal, Panama"));
+const str = "A man, a plan, a canal, Panama";
+console.log("-- run: palindromeCheck", str);
+console.log("-- result:", palindromeCheck(str));

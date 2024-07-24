@@ -1,9 +1,21 @@
-const sparseArrayRotation = (input=[],steps)=>{
-    return input
-}
+const sparseArrayRotation = (input = [], steps) => {
+  const result = input;
+  const length = result.length;
 
-const input= [1, None, 2, None, 3]
-const steps = 2
+  for (let index = 0; index < steps; index++) {
+    const element = result.pop();
+    result.unshift(element);
 
+    while (result[length - 1] == "None") {
+      const element = result.pop();
+      result.unshift(element);
+    }
+  }
+  return result;
+};
 
-console.log(sparseArrayRotation(input,steps))
+const input = [1, "None", 2, "None", 3];
+const steps = 2;
+
+console.log("-- run: sparseArrayRotation", input);
+console.log("-- result:", sparseArrayRotation(input, steps));

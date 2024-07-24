@@ -1,4 +1,4 @@
-const customAPIRequest = async (currencyInput, currencyOutput, inputValue) => {
+const calculateCurrency = async (currencyInput, currencyOutput, inputValue) => {
   try {
     const apiUrl = "https://api.freecurrencyapi.com/v1/latest";
     const apiKey = "fca_live_TSSPCdeKZQJDpcrqAlPaHC5hKWZoVjlKh9VHyxhC";
@@ -13,10 +13,24 @@ const customAPIRequest = async (currencyInput, currencyOutput, inputValue) => {
 
     const currencies = await response.json();
 
-    console.log("--", currencies.data[currencyInput]);
-    console.log("--", currencies.data[currencyOutput]);
+    const result =
+      (inputValue * currencies.data[currencyInput]) /
+      currencies.data[currencyOutput];
+
+    return result;
   } catch (error) {
     console.log("error: ", error);
   }
 };
-customAPIRequest("USD", "AUD");
+
+const customAPIRequest = async (currencyInput, currencyOutput, inputValue) => {
+  const result = await calculateCurrency(
+    currencyInput,
+    currencyOutput,
+    inputValue
+  );
+
+  console.log(result);
+};
+
+customAPIRequest("AUD", "USD", 1);

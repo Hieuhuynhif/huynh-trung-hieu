@@ -1,6 +1,6 @@
 # Test IT
 
--- cd ./src
+### cd ./src
 
 ## Problem 1
 
@@ -24,41 +24,42 @@
 --- open with Chrome/ Edge/..other browser file "main.html"
 
 ## Problem 6
+
 -- List Supported Currencies:
-    AUD
-    BGN 
-    BRL 
-    CAD 
-    CHF 
-    CNY 
-    CZK 
-    DKK
-    EUR 
-    GBP 
-    HKD 
-    HRK 
-    HUF 
-    IDR 
-    ILS 
-    INR 
-    ISK
-    JPY 
-    KRW
-    MXN 
-    MYR 
-    NOK 
-    NZD 
-    PHP 
-    PLN 
-    RON 
-    RUB 
-    SEK 
-    SGD
-    THB 
-    TRY 
-    USD 
-    ZAR 
-    
+AUD
+BGN
+BRL
+CAD
+CHF
+CNY
+CZK
+DKK
+EUR
+GBP
+HKD
+HRK
+HUF
+IDR
+ILS
+INR
+ISK
+JPY
+KRW
+MXN
+MYR
+NOK
+NZD
+PHP
+PLN
+RON
+RUB
+SEK
+SGD
+THB
+TRY
+USD
+ZAR
+
 -- Function: Currency Conversion
 -- input : currencyA, currencyB, valueA
 -- output: valueB

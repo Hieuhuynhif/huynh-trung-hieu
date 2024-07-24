@@ -26,6 +26,10 @@
 
 ## Problem 6
 
+### Function: Currency Conversion
+
+### Call Public API to get Exchange Rate Currencies, then calculate to cover currency A => currency B
+
 ### List Supported Currencies:
 
 AUD
@@ -61,8 +65,6 @@ THB
 TRY
 USD
 ZAR
-
-### Function: Currency Conversion
 
 ### input : currencyA, currencyB, valueA
 
